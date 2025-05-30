@@ -99,7 +99,7 @@ export default function Home() {
               </p>
               </div>
               <div className="QR_code" style={{ marginTop: "10px" }}>
-                <Link href={`/${vehicle._id}`}>
+                <Link href={`https://vcc-details-deployment.vercel.app/${vehicle._id}`}>
                   <QRCodeSVG
                     id={`qr-svg-${vehicle._id}`}
                     value={`https://vcc-details-deployment.vercel.app/${vehicle._id}`}
