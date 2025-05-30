@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 
 const Delete = ({ id, name }) => {
   const handleDelete = async () => {
-    let deleteveh = await fetch(`https://vcc-details-deployment.vercel.app/api/get-vehicle/${id}`, {
+    let deleteveh = await fetch(`https://vcc-details-deployment-six.vercel.app//api/get-vehicle/${id}`, {
       method: "DELETE",
     });
     deleteveh = await deleteveh.json();

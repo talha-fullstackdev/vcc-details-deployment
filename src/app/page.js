@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const getVehicleData = async () => {
       try {
-        const response = await fetch("https://vcc-details-deployment.vercel.app/api/get-vehicle");
+        const response = await fetch("https://vcc-details-deployment-six.vercel.app/api/get-vehicle");
         const result = await response.json();
         setVehicleData(result);
       } catch (err) {
@@ -102,7 +102,7 @@ export default function Home() {
                 <Link href={`/${vehicle._id}`}>
                   <QRCodeSVG
                     id={`qr-svg-${vehicle._id}`}
-                    value={`https://vcc-details-deployment.vercel.app//${vehicle._id}`}
+                    value={`https://vcc-details-deployment-six.vercel.app//${vehicle._id}`}
                     size={200}
                     bgColor="transparent" // transparent background
                     fgColor="#000000"
