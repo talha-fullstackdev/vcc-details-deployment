@@ -15,7 +15,7 @@ const GetData = ({ id }) => {
     const getVehicleData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/get-vehicle/${id}`
+          `https://vcc-details-deployment.vercel.app/get-vehicle/${id}`
         );
         const result = await response.json();
         setData(result.data);

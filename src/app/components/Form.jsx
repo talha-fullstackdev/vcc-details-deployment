@@ -72,7 +72,7 @@ const Form = ({ data, clearInputs }) => {
     console.log(data);
 
     try {
-      let result = await fetch("http://localhost:3000/api/post-vehicle", {
+      let result = await fetch("https://vcc-details-deployment.vercel.app/api/post-vehicle", {
         method: "POST",
         body: JSON.stringify(data),
       });
